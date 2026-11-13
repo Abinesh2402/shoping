@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Online Shopping</title>
+
+    <link rel="stylesheet" href="shopping.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-bag-shopping"></i>
+            Shop<span>Ease</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#products">Products</a>
+            <a href="#offers">Offers</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-right">
+
+            <div class="search">
+                <input
+                    type="text"
+                    id="searchBox"
+                    placeholder="Search products..."
+                    onkeyup="searchProducts()"
+                >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span id="cartCount">0</span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                ✨ NEW COLLECTION 2026
+            </p>
+
+            <h1>
+                Shop Smart.
+                <span>Live Better.</span>
+            </h1>
+
+            <p>
+                Discover amazing products, exciting offers
+                and unbeatable prices — all in one place.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#products" class="shop-btn">
+                    Shop Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#offers" class="offer-btn">
+                    View Offers
+                </a>
+
+            </div>
+
+            <div class="hero-features">
+
+                <div>
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <span>Free Delivery</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Secure Payment</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-rotate-left"></i>
+                    <span>Easy Returns</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <div class="circle-bg"></div>
+
+            <div class="shopping-emoji">
+                🛍️
+            </div>
+
+            <div class="floating-card card-one">
+                ⭐ 4.9 Rating
+            </div>
+
+            <div class="floating-card card-two">
+                🔥 50% OFF
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section id="categories" class="categories-section">
+
+        <div class="section-heading">
+
+            <p>
+                SHOP BY CATEGORY
+            </p>
+
+            <h2>
+                Explore Our <span>Categories</span>
+            </h2>
+
+        </div>
+
+
+        <div class="categories">
+
+            <a href="#products" class="category">
+                <div class="category-icon clothes">
+                    👕
+                </div>
+                <h3>Fashion</h3>
+                <p>120+ Items</p>
+            </a>
+
+
+            <a href="#products" class="category">
+                <div class="category-icon electronics">
+                    💻
+                </div>
+                <h3>Electronics</h3>
+                <p>80+ Items</p>
+            </a>
+
+
+            <a href="#products" class="category">
+                <div class="category-icon shoes">
+                    👟
+                </div>
+                <h3>Footwear</h3>
+                <p>60+ Items</p>
+            </a>
+
+
+            <a href="#products" class="category">
+                <div class="category-icon beauty">
+                    💄
+                </div>
+                <h3>Beauty</h3>
+                <p>90+ Items</p>
+            </a>
+
+
+            <a href="#products" class="category">
+                <div class="category-icon accessories">
+                    🎒
+                </div>
+                <h3>Accessories</h3>
+                <p>70+ Items</p>
+            </a>
+
+
+            <a href="#products" class="category">
+                <div class="category-icon gadgets">
+                    ⌚
+                </div>
+                <h3>Smart Gadgets</h3>
+                <p>50+ Items</p>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section id="products" class="products-section">
+
+        <div class="section-heading">
+
+            <p>
+                TRENDING NOW
+            </p>
+
+            <h2>
+                Popular <span>Products</span>
+            </h2>
+
+        </div>
+
+
+        <div class="products">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product-card">
+
+                <div class="discount">
+                    -30%
+                </div>
+
+                <button class="heart">
+                    ♡
+                </button>
+
+                <div class="product-image blue-bg">
+                    👕
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">
+                        Fashion
+                    </p>
+
+                    <h3>
+                        Premium Cotton T-Shirt
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(124)</span>
+                    </div>
+
+                    <div class="price">
+
+                        <strong>
+                            ₹699
+                        </strong>
+
+                        <del>
+                            ₹999
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Premium Cotton T-Shirt', 699)"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card">
+
+                <div class="discount pink">
+                    -25%
+                </div>
+
+                <button class="heart">
+                    ♡
+                </button>
+
+                <div class="product-image pink-bg">
+                    👟
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">
+                        Footwear
+                    </p>
+
+                    <h3>
+                        Running Sports Shoes
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(98)</span>
+                    </div>
+
+                    <div class="price">
+
+                        <strong>
+                            ₹1,499
+                        </strong>
+
+                        <del>
+                            ₹1,999
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Running Sports Shoes', 1499)"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card">
+
+                <div class="discount purple">
+                    -35%
+                </div>
+
+                <button class="heart">
+                    ♡
+                </button>
+
+                <div class="product-image purple-bg">
+                    🎧
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">
+                        Electronics
+                    </p>
+
+                    <h3>
+                        Wireless Headphones
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(215)</span>
+                    </div>
+
+                    <div class="price">
+
+                        <strong>
+                            ₹1,299
+                        </strong>
+
+                        <del>
+                            ₹1,999
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Wireless Headphones', 1299)"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="product-card">
+
+                <div class="discount green">
+                    -20%
+                </div>
+
+                <button class="heart">
+                    ♡
+                </button>
+
+                <div class="product-image green-bg">
+                    ⌚
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">
+                        Smart Gadgets
+                    </p>
+
+                    <h3>
+                        Smart Fitness Watch
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(156)</span>
+                    </div>
+
+                    <div class="price">
+
+                        <strong>
+                            ₹1,999
+                        </strong>
+
+                        <del>
+                            ₹2,499
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Smart Fitness Watch', 1999)"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 5 -->
+
+            <div class="product-card">
+
+                <div class="discount orange">
+                    -40%
+                </div>
+
+                <button class="heart">
+                    ♡
+                </button>
+
+                <div class="product-image orange-bg">
+                    🎒
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">
+                        Accessories
+                    </p>
+
+                    <h3>
+                        College Backpack
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(76)</span>
+                    </div>
+
+                    <div class="price">
+
+                        <strong>
+                            ₹899
+                        </strong>
+
+                        <del>
+                            ₹1,499
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('College Backpack', 899)"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 6 -->
+
+            <div class="product-card">
+
+                <div class="discount">
+                    -15%
+                </div>
+
+                <button class="heart">
+                    ♡
+                </button>
+
+                <div class="product-image yellow-bg">
+                    🕶️
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">
+                        Accessories
+                    </p>
+
+                    <h3>
+                        Premium Sunglasses
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(87)</span>
+                    </div>
+
+                    <div class="price">
+
+                        <strong>
+                            ₹599
+                        </strong>
+
+                        <del>
+                            ₹699
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Premium Sunglasses', 599)"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 7 -->
+
+            <div class="product-card">
+
+                <div class="discount purple">
+                    -10%
+                </div>
+
+                <button class="heart">
+                    ♡
+                </button>
+
+                <div class="product-image laptop-bg">
+                    💻
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">
+                        Electronics
+                    </p>
+
+                    <h3>
+                        Student Laptop
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(192)</span>
+                    </div>
+
+                    <div class="price">
+
+                        <strong>
+                            ₹49,999
+                        </strong>
+
+                        <del>
+                            ₹54,999
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Student Laptop', 49999)"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 8 -->
+
+            <div class="product-card">
+
+                <div class="discount pink">
+                    -18%
+                </div>
+
+                <button class="heart">
+                    ♡
+                </button>
+
+                <div class="product-image phone-bg">
+                    📱
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">
+                        Electronics
+                    </p>
+
+                    <h3>
+                        Smart Smartphone
+                    </h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                        <span>(310)</span>
+                    </div>
+
+                    <div class="price">
+
+                        <strong>
+                            ₹19,999
+                        </strong>
+
+                        <del>
+                            ₹23,999
+                        </del>
+
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Smart Smartphone', 19999)"
+                    >
+                        <i class="fa-solid fa-cart-plus"></i>
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= OFFER ================= -->
+
+    <section id="offers" class="offer-section">
+
+        <div class="offer-content">
+
+            <p>
+                🔥 LIMITED TIME OFFER
+            </p>
+
+            <h2>
+                Get Up To
+                <span>50% OFF</span>
+            </h2>
+
+            <p>
+                On selected products. Grab your favorite
+                products before the offer ends!
+            </p>
+
+            <a href="#products">
+                Shop Offers →
+            </a>
+
+        </div>
+
+        <div class="offer-icon">
+            🎁
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact-section">
+
+        <div class="section-heading">
+
+            <p>
+                NEED HELP?
+            </p>
+
+            <h2>
+                Contact <span>Us</span>
+            </h2>
+
+        </div>
+
+
+        <div class="contact-box">
+
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+
+                <h3>
+                    Email
+                </h3>
+
+                <p>
+                    support@shopease.com
+                </p>
+            </div>
+
+
+            <div>
+                <i class="fa-solid fa-phone"></i>
+
+                <h3>
+                    Phone
+                </h3>
+
+                <p>
+                    +91 XXXXX XXXXX
+                </p>
+            </div>
+
+
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3>
+                    Location
+                </h3>
+
+                <p>
+                    Puducherry, India
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🛍️ Shop<span>Ease</span>
+        </div>
+
+        <p>
+            Your favorite online shopping destination.
+        </p>
+
+        <div class="social">
+
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 ShopEase. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="shopping.js"></script>
+
+</body>
+
+</html>
